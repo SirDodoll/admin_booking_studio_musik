@@ -19,21 +19,27 @@ class DashboardModel {
       text: "Booking",
       imagePath: AssetsManager.booking,
       onPressed: () {
-        Navigator.pushNamed(context, BookingadminScreen.routName);
+        Navigator.push(context, MaterialPageRoute(builder: (_) => AdminBookingScreen()));
       },
     ),
     DashboardModel(
       text: "laporan",
       imagePath: AssetsManager.laporan,
       onPressed: () {
-        Navigator.pushNamed(context, LaporanScreen.routName);
+        Navigator.push(context, 
+            MaterialPageRoute(builder: (_) => Laporan(),
+        )
+        );
       },
     ),
     DashboardModel(
       text: "Setting",
       imagePath: AssetsManager.setting,
       onPressed: () {
-        Navigator.pushNamed(context, SettingScreen.routName);
+        Navigator.push(context,
+            MaterialPageRoute(builder: (_) => Setting()
+            )
+        );
       },
     ),
   ];

@@ -34,6 +34,14 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  supabase_flutter: ^2.8.4
+  intl: ^0.20.2
+  pdf: ^3.11.3
+  printing: ^5.14.2
+  permission_handler: ^12.0.0+1
+  font_awesome_flutter: ^10.8.0
+
+
 
 dev_dependencies:
   flutter_test:
@@ -55,11 +63,19 @@ dev_dependencies:
   card_swiper: ^2.0.4
   image_picker: ^0.8.7+5
   uuid: ^3.0.7
+  crypto: ^3.0.6
+  flutter_launcher_icons: ^0.14.3
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
+flutter_icons:
+  android: true
+  image_path: "assets/images/logoAdmin.png"
+  adaptive_icon_foreground: "assets/images/logoAdmin.png"
+
 # The following section is specific to Flutter packages.
+
 flutter:
 
   # The following line ensures that the Material Icons font is
@@ -83,10 +99,19 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Inder
+      fonts:
+         - asset: assets/font/Inder-Regular.ttf
+    - family: Imprint
+      fonts:
+        - asset: assets/font/imprint-mt-shadow.ttf
+    - family: imprint
+      fonts:
+        - asset: assets/font/imprint-mt-shadow.ttf
+    - family: Imprint
+      fonts:
+        - asset: assets/font/imprint-mt-shadow.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
